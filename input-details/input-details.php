@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form action="" method="post">
+    <form action="input-action.php" method="post">
         <div class="nav_links">
             <div class="logo">
                 <a href="home.php"><img src="logo2.png"  alt="#"></a>
@@ -43,7 +43,7 @@
             </div>       
             <div class="input3">
                 <label for="">Date</label>
-                <input type="date" name="" id="">
+                <input type="date" name="date" id="">
             </div>
                   
             
@@ -61,7 +61,7 @@
                 
             </div>    
             <div class="input4">
-                <textarea name="" id="" cols="40" rows="6" placeholder="Description"></textarea>
+                <textarea name="details" id="" cols="40" rows="6" placeholder="Description"></textarea>
             </div>
                 
             <div class="button">

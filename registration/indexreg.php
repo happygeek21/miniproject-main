@@ -63,7 +63,7 @@
     
                     <div class="link">
                         <label>Already a User?</label>
-                        <a href="indexlogin.php">Login</a>
+                        <a href="http://localhost/miniproject-main/login/login.php">Login</a>
                     </div>
                                
                 

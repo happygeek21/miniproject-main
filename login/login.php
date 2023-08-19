@@ -3,7 +3,7 @@
 <head>
 <title>Website-Login</title>
 <link rel="stylesheet" href="login.css">
-<script src="validation.js"></script>
+<script src="http://localhost/miniproject-main/login/validation.js"></script>
 </head>
 <body>
     
@@ -40,7 +40,7 @@
 
                     <div class="links">
                         <label>New To The Website?</label>
-                        <a href="indexreg.php">Register Here</a>
+                        <a href="http://localhost/miniproject-main/registration/indexreg.php">Register Here</a>
                     </div>
                                 
                         

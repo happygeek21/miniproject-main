@@ -32,7 +32,7 @@ return false;
 
 if(email == "" && !email.match(email_reg))
 {
-alert("Enter Email....field cannot be empty");
+alert("Email Field is Empty!");
 return false;
 }
 }

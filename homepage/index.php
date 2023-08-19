@@ -11,14 +11,14 @@
     <form action="" method="post">
         <div class="nav_links">
             <div class="logo">
-                <a href="index.php"><img src="logo\logo2.png"  alt="#"></a>
+                <a href="miniproject-main\registration\indexreg.php"><img src="logo2.png"  alt="#"></a>
                 
             </div>
             
             <ul>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a id=button href="indexreg.php">Sign Up</a></li>
+                <li><a id=button href="http://localhost/miniproject-main/registration/indexreg.php">Sign Up</a></li>
             
             </ul>
         </div>
