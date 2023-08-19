@@ -11,7 +11,7 @@
     <form action="" method="post">
         <div class="nav_links">
             <div class="logo">
-                <a href="home.php"><img src="logo2.png"  alt="#"></a>
+                <a href="index.php"><img src="logo\logo2.png"  alt="#"></a>
                 
             </div>
             
