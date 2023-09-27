@@ -32,6 +32,7 @@
             
             <div class="input1">
                 
+
             
                 <label for="">Select Your Phone Brand</label>
                 <select name="phones" id="phones">
@@ -40,21 +41,28 @@
                         <option value="XIAOMI">Xiaomi</option>
                         <option value="ONEPLUS">Oneplus</option>
                     </select>
-            </div>       
-            <div class="input3">
-                <label for="">Date</label>
-                <input type="date" name="date" id="">
+            </div>    
+            
+            <div class="input5">
+                <label for="">E-Mail</label>
+                <input type="email" name="email">
             </div>
+            <div class="input5">
+                <label for="">Model Number</label>
+                <input type="text" name="model">
+            </div>
+
+        
                   
             
                
             <div class="input2">
             <label for="">Mention Your Phone Complaint</label>
                 <select name="complaint" id="complaint">
-                    <option value="SAMSUNG">Display Complaint</option>
-                    <option value="APPLE">Dead Device</option>
-                    <option value="XIAOMI">Speaker Dead</option>
-                    <option value="ONEPLUS">Microphone Dead</option>
+                    <option value="Display Complaint">Display Complaint</option>
+                    <option value="Dead Device">Dead Device</option>
+                    <option value="Speaker Dead">Speaker Dead</option>
+                    <option value="Microphone Dead">Microphone Dead</option>
                     
                 </select>
             

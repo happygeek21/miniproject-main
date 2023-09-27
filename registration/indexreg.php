@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="logo.png" type="image/x-icon">
 <title>Website-Register</title>
+<script src="http://localhost/miniproject-main/registration/validate-reg.js"></script>
 <link rel="stylesheet" href="register.css" type="text/css">
 
 </head>
@@ -20,38 +22,38 @@
                 <img src="logo.png" alt="" srcset="" style="width:55px;height:55px;">   
                 </header>
                 
-                <form action="register.php" method="post">
+                <form onsubmit="return validate()" action="action-register.php" method="post">
                    
                     <div class="name-details">
                         <div class="fields">
                             <label>First Name</label>
-                            <input type="text" name="firstname" id=firstname placeholder="First Name" required>
+                            <input type="text" name="firstname" id=firstname placeholder="First Name"  >
                                     
                         </div>
                         <div class="fields">
                                     
                             <label>Last Name</label>
-                            <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                            <input type="text" name="lastname" id="lastname" placeholder="Last Name" >
                                    
                         </div>
                     </div>         
                     <div class="fields">
                         <label>E-Mail</label>
-                        <input type="email" name="mail" id="mail"  placeholder="E-Mail" required>
+                        <input type="email" name="mail" id="mail"  placeholder="E-Mail" >
                                     
                     </div>
                                 
                              
                     <div class="fields">
                         <label>Phone Number</label>
-                        <input type="phone" name="phone" id="phone"  placeholder="Phone Number" required>
+                        <input type="phone" name="phone" id="phone"  placeholder="Phone Number" >
                                     
                     </div>
 
                     <div class="fields">
                                     
                         <label>Password</label>
-                        <input type="password" required name="passwd" id="passwd" placeholder="Password" required>
+                        <input type="password"  name="passwd" id="passwd" placeholder="Password" >
                                     
                     </div>
         

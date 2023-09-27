@@ -11,12 +11,22 @@ $result = mysqli_fetch_array($res);
 
 if($result)
 {
-	$_SESSION["user_info"] = $result["email"];
-	header("location:display-details.php");
+	$_SESSION["email_info"] = $result["email"];
+	$_SESSION["firstname"] = $result["firstname"];
+	if($email=="admin@gmail.com")
+	{
+		header("location:http://localhost/miniproject-main/order_status/order_db.php");
+	}
+	else
+	{
+		header("location:http://localhost/miniproject-main/homepage/user-home.php");
+	}
+	
 }
 else
 {
-	header("location:indexlogin.php");
+	header("location:login.php");
 	
 }
+
 ?>
