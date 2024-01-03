@@ -27,6 +27,10 @@ body header{
 }
 
 
+header img{
+    width:50px;
+}
+
 .wrapper{
     background-color: rgba(255, 255, 255, 0.671);
     

@@ -20,7 +20,7 @@
 }
 
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
@@ -29,6 +29,12 @@ body{
     background-color: #ece7e7;
     
 }
+
+body header{
+    display:flex;
+}
+
+
 
  
 
@@ -41,6 +47,12 @@ body{
             
          
             
+}
+
+
+
+header img{
+    width:45px
 }
 
 

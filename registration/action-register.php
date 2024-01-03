@@ -18,6 +18,7 @@
     {
         echo"Connection Success!";
     }
+   
     //inserting to table
     
     $fname=$_POST['firstname'];
@@ -27,6 +28,14 @@
     $ph=$_POST['phone'];
     $pass=$_POST['passwd'];
     $enc_pass=MD5($pass);
+
+     //php validation
+
+    if(empty($fname)){
+        $name_error= "Please Enter First Name";
+    }
+    
+    
     
     $query = "INSERT INTO user_info (firstname, lastname, email, phone, passwd) VALUES ('$fname', '$lname', '$mail', '$ph', '$enc_pass')";
     $result=mysqli_query($conn,$query);

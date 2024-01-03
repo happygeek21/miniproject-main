@@ -8,15 +8,16 @@
 </head>
 <body>
 
-    <div class="" id="preloader">
 
-
-    </div>
     <div class="wrapper">
             <section class="form-sign">
                 <header>
-                    <img src="logo.png" alt="" srcset="" style="width:55px;height:55px;">
+                    <img src="200login.gif" alt="" srcset="">
                 </header>
+                    
+              
+                
+                
                 <form onsubmit="return form_validate()" action="login-action.php" method="post">
                 
                     <div class="fields">

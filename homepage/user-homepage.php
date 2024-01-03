@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="all.min.css"/>
     <link rel="stylesheet" href="highlighters.css"/>
     
+    
 </head>
 <body>
 
@@ -23,7 +24,7 @@
     
         <div class="nav_links">
             <div class="logo">
-                <a href="miniproject-main\registration\indexreg.php"><img src="logo2.png"  alt="#"></a>
+                <a href="miniproject-main\registration\indexreg.php"><img src="gg.gif"  alt="#"></a>
                 
             </div>
             <ul>
@@ -38,13 +39,14 @@
         <div class="support">
             <p>Popular Brands We Support</p>
         </div>
-        
+       
         <div class="brands">
             <div class="images">
                 <img class="img1" src="samsung.png" alt="">
                 <img class="img2" src="apple.png" alt="">
                 <img class="img3" src="mi.png" alt="">
                 <img class="img4" src="oneplus.png" alt="">
+                
             </div>
         </div>
         
@@ -55,13 +57,26 @@
         <p>We Provide Fast & Reliable Repair Charges.</p>
         <p>Customers Responses Are Our First Priority.</p>
         
-        <h1>Dream Bigger Achieve Bigger</h1>
 
         <p class="right-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, iste?</p>
    
         <a href="http://localhost/miniproject-main/input-details/input-details.php">register complaint</a>
-        
+        <div id="slider">
+           
+            <ul id="slideWrap">
+                
+                <li><img src="iphone.jpg" alt=""></li>
+                <li><img src="slider-image3.jpg" alt=""></li>
+                <li><img src="white_side.jpg" alt=""></li>
+              
+            </ul>  
+            <a id="prev" href="#">&#8810;</a>
+            <a id="next" href="#">&#8811;</a>
+        </div>    
+       
     </div>
+       
+    </body>
 
     <div class="testimonial-container">
    <section class="testimonials">
@@ -232,23 +247,7 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-    const swiper = new Swiper('.js-testimonials-slider', {
-            grabCursor: true,
-            spaceBetween:30,
-            pagination:{
-                el:'.js-testimonials-pagination',
-                clickable: true,
-            },
-            breakpoints:{
-                767:{
-
-                    slidesPerView:3
-                }
-            }
-        });
-
-    </script>
+    <script src="slider.js"></script>
 </body>
 </html>    
     

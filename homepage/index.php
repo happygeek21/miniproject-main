@@ -22,7 +22,7 @@
     
         <div class="nav_links">
             <div class="logo">
-                <a href="miniproject-main\registration\indexreg.php"><img src="logo2.png"  alt="#"></a>
+                <a href="miniproject-main\registration\indexreg.php"><img src="gg.gif" alt="#"></a>
                 
             </div>
             

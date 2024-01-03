@@ -3,7 +3,7 @@
 <head>
 <link rel="icon" href="logo.png" type="image/x-icon">
 <title>Website-Register</title>
-<script src="http://localhost/miniproject-main/registration/validate-reg.js"></script>
+<script src="http://localhost/miniproject-main/registration/validate-re.js"></script>
 <link rel="stylesheet" href="register.css" type="text/css">
 
 </head>
@@ -19,7 +19,7 @@
             
                 <header>
                 
-                <img src="logo.png" alt="" srcset="" style="width:55px;height:55px;">   
+                <img src="200login.gif" alt="" srcset="">   
                 </header>
                 
                 <form onsubmit="return validate()" action="action-register.php" method="post">
@@ -27,7 +27,8 @@
                     <div class="name-details">
                         <div class="fields">
                             <label>First Name</label>
-                            <input type="text" name="firstname" id=firstname placeholder="First Name"  >
+                            <input type="text" name="firstname" id=firstname placeholder="First Name">
+                            <span class="text-danger"><?php if(!empty($name_error)){echo $name_error;}?></span>
                                     
                         </div>
                         <div class="fields">

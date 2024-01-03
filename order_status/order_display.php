@@ -64,6 +64,10 @@
                             WHEN status = '1' THEN 'Pending'
                             WHEN status = '2' THEN 'Accept'
                             WHEN status = '3' THEN 'Reject'
+                            WHEN status = '4' THEN 'Order Received'
+                            WHEN status = '5' THEN 'Out For Pickup'
+                            WHEN status = '6' THEN 'In-Transit'
+                            WHEN status = '7' THEN 'Arrived At Shop'
                             ELSE action -- If no condition is met, keep the existing value in column1
                         END";
                          $result1=mysqli_query($conn,$qry1);

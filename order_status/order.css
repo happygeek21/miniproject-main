@@ -10,6 +10,29 @@
 }
 
 
+.nav_links{
+    background-color: (238,238,238);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+    
+}
+
+.nav_links ul li a{
+    text-decoration: none;
+    color: black;
+    font-family:'Montserrat', sans-serif;
+    
+
+}
 
 #preloader{
     background:whitesmoke url(giphy.gif) no-repeat center ;

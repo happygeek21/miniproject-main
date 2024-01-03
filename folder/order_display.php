@@ -32,7 +32,7 @@
             <ul>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a id="button" href="http://localhost/miniproject-main/registration/indexreg.php">Sign Up</a></li>
+                <li><a id="button" href="http://localhost/miniproject-main/folder/paymenthistory.php">Payment history</a></li>
                 <li><a id="button" href="http://localhost/miniproject-main/login/logout.php">Log Out</a></li>
             
             </ul>
@@ -42,16 +42,16 @@
             <h1>Track Your Order</h1>
 
             <div class="trackbody">
-                <table border=1>
+                <table border=1 >
                 <th>
                     <tr>
                         <td>Date of Request</td>
                         <td>Product</td>
                         <td>Model Number</td>
                         <td>Ticket Number</td>
-                        <td>Status</td>
+                        <td style="width:25%">Status</td>
                         <td>Email Address</td>
-                        
+                        <td>Email Address</td>
                     </tr>
                 </th>
                 <tbody>
@@ -65,6 +65,10 @@
                             WHEN status = '1' THEN 'Pending'
                             WHEN status = '2' THEN 'Accept'
                             WHEN status = '3' THEN 'Reject'
+                            WHEN status = '4' THEN 'Order Received'
+                            WHEN status = '5' THEN 'Out For Pickup'
+                            WHEN status = '6' THEN 'In-Transit'
+                            WHEN status = '7' THEN 'Arrived At Shop'
                             ELSE action -- If no condition is met, keep the existing value in column1
                         END";
                          $result1=mysqli_query($conn,$qry1);
@@ -100,7 +104,7 @@
                         <td>".$row["ticket"]."</td>
                         <td>".$row["action"]."</td>
                         <td>".$row["email"]."</td>
-                       
+                        
                         
                        
 

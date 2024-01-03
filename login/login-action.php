@@ -15,11 +15,15 @@ if($result)
 	$_SESSION["firstname"] = $result["firstname"];
 	if($email=="admin@gmail.com")
 	{
-		header("location:http://localhost/miniproject-main/order_status/order_db.php");
+		header("location:http://localhost/miniproject-main/homepage/admin-home.php");
+	}
+	elseif($email=="staff@gmail.com")
+	{
+		header("location:http://localhost/miniproject-main/homepage/staff-home.php");
 	}
 	else
 	{
-		header("location:http://localhost/miniproject-main/homepage/user-home.php");
+		header("location:http://localhost/miniproject-main/homepage/user-homepage.php");
 	}
 	
 }
