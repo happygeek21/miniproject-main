@@ -3,8 +3,8 @@
 <head>
 <link rel="icon" href="logo.png" type="image/x-icon">
 <title>Website-Register</title>
-<script src="http://localhost/miniproject-main/registration/validate-reg.js"></script>
-<link rel="stylesheet" href="register.css" type="text/css">
+<script src="http://localhost/miniproject-main/homepage/validate-contact.js"></script>
+<link rel="stylesheet" href="contactus.css" type="text/css">
 
 </head>
 <body>
@@ -22,7 +22,7 @@
                 <img src="200login.gif" alt="" srcset="">   
                 </header>
                 
-                <form onsubmit="return validate()" action="action-register.php" method="post">
+                <form onsubmit="return validate()" action="https://formspree.io/f/moqgvqad" method="post">
                    
                     <div class="name-details">
                         <div class="fields">
@@ -44,42 +44,21 @@
                                     
                     </div>
                                 
-                             
                     <div class="fields">
-                        <label>Phone Number</label>
-                        <input type="phone" name="phone" id="phone"  placeholder="Phone Number" >
-                                    
-                    </div>
+                        <label>Subject</label>
+                        <textarea id="story" name="story" rows="5" cols="33"></textarea>
 
-                    <div class="fields">
                                     
-                        <label>Password</label>
-                        <input type="password"  name="passwd" id="passwd" placeholder="Password" >
-                                    
-                    </div>
-
-                    <div class="fields">
-                                    
-                        <label>Confirm Password</label>
-                        <input type="password"  name="cp" id="confirm_pass" placeholder="Confirm Password" >
-                                    
-                    </div>
-
-                    <div class="fields">
-                        <label for="">Date of Birth</label>
-                        <input type="date" name="dob" id="dob" placeholder="Enter DOB">
-                    </div>
+                    </div>  
+                    
         
                                 
                     <div class="fields-button">
-                        <input type="submit" value="Sign Up" id="1" >
+                        <input type="submit" value="Send Message" id="1" >
                     </div>
                                 
     
-                    <div class="link">
-                        <label>Already a User?</label>
-                        <a href="http://localhost/miniproject-main/login/login.php">Login</a>
-                    </div>
+                    
                                
                 
                 </form> 

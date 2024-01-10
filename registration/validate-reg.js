@@ -5,9 +5,16 @@ function validate()
     var mail=document.getElementById("mail");
     var phone=document.getElementById("phone");
     var passwd=document.getElementById("passwd");
+    var dob=document.getElementById("dob");
+    var confirm_pass=document.getElementById("confirm_pass");
 
-    if(firstname.value.trim()=="")
+    if(firstname.value.trim()=="" && lastname.value.trim()=="" && mail.value.trim()=="" && phone.value.trim()=="" && passwd.value.trim()=="" && dob.value.trim()=="")
     {
+        alert("The Form is Empty, Please Fill The Form!")
+        return false;
+    }
+   
+    else if (firstname.value.trim()==""){
         alert("firstname is empty!");
         return false;
     }
@@ -39,6 +46,13 @@ function validate()
     else if(passwd.value.length<9)
     {
         alert("Weak Password! Enter a password with more than 9 Characters!");
+        return false;
+    }
+
+    
+    else if(dob.value.trim()="")
+    {
+        alert("Enter DOB to Continue!");
         return false;
     }
     else

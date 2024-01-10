@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="swiper-bundle.min.css"/>
     <link rel="stylesheet" href="all.min.css"/>
     <link rel="stylesheet" href="highlighters.css"/>
+    <script src="http://localhost/miniproject-main/homepage/faq.js"></script>
+    
     
     
 </head>
@@ -28,8 +30,8 @@
                 
             </div>
             <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="http://localhost/miniproject-main/homepage/contactus.php">Contact Us</a></li>
+                <li><a href="http://localhost/miniproject-main/homepage/aboutus.php">About Us</a></li>
                 <li><a id="buttonn" href="http://localhost/miniproject-main/folder/order_display.php">Track Order</a></li>
                 <li><a id="button" href="http://localhost/miniproject-main/login/logout.php">Log Out</a></li>
             
@@ -50,6 +52,11 @@
             </div>
         </div>
         
+    <div class="desc">
+        <h2><?php  include('conn.php') ;echo("Welcome $user");?></h2>
+        <a href="http://localhost/miniproject-main/input-details/input-details.php"><input type="button" name=button1 class="button-30" value="Register Complaint"></a>
+    
+    </div>     
     <div class="content">
             
         <h3>The Repair Process</h3>
@@ -58,24 +65,59 @@
         <p>Customers Responses Are Our First Priority.</p>
         
 
-        <p class="right-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, iste?</p>
+  
    
-        <a href="http://localhost/miniproject-main/input-details/input-details.php">register complaint</a>
-        <div id="slider">
-           
-            <ul id="slideWrap">
-                
-                <li><img src="iphone.jpg" alt=""></li>
-                <li><img src="slider-image3.jpg" alt=""></li>
-                <li><img src="white_side.jpg" alt=""></li>
-              
-            </ul>  
-            <a id="prev" href="#">&#8810;</a>
-            <a id="next" href="#">&#8811;</a>
-        </div>    
+        
+        
        
     </div>
-       
+    <div class="content">
+            
+            <h3>Quality Assurance</h3>
+            <ul>
+                <li>Assure customers of the high-quality parts and skilled technicians you use for repairs. Highlight any certifications or guarantees that set your services apart.</li>
+                
+                
+            </ul>
+            
+    
+
+            
+            
+           
+        </div>
+   
+    </div>
+
+    <div class="content">
+            
+            <h3>Services Offered</h3>
+            <ul>
+                <li>Soft Brick/Hard Bricked Repair Services</li>
+                <li>Screen Replacement Services</li>
+                <li>Water Damaged Recovery Repairs</li>
+                <li>Battery Replacement</li>
+                <li>Software Upgrade And Custom OS Solutions</li>
+
+                <li>Data Recovery</li>
+                <li>Phones And Accesories Sales Coming Soon</li>
+                
+            </ul>
+            
+    
+
+            
+            
+           
+        </div>
+   
+    </div>
+    
+    
+    
+    
+    
+    
     </body>
 
     <div class="testimonial-container">
@@ -95,7 +137,7 @@
                                 <span class="job">Game developer</span>
                             </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>One of The Best Shop And Website Ever Used..Highly Recommended</p>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -112,7 +154,7 @@
                                 <span class="job">Web developer</span>
                             </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Very Good Customer Service Highly Reccomended</p>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -126,10 +168,10 @@
                             <img src="profile.png" alt="img">
                             <div class="text-box">
                                 <h3 class="name">Kiara .S</h3>
-                                <span class="job">Web developer</span>
+                                <span class="job">UI/UX Designer</span>
                             </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Professional Staff And fixed my phone within 2 days..Highly Reccomended Place to repair your phone.</p>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -146,7 +188,7 @@
                                 <span class="job">Web developer</span>
                             </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>No More Words, Best Doctors For Repairing your Phones. Saved a lot money!</p>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -166,7 +208,98 @@
         
 
     </form>
-    
+    <div class="wrappers">
+      <p>The Begninning of a New Asset class</p>
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          Why Choose Us?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Krushi is a Public Charitable Trust designed to carry out farming on
+            extensive scale Natural & Sustainable methods.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How does it work?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+            saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+            ullam, iure eligendi harum eaque hic corporis debitis porro
+            consectetur voluptate rem officiis architecto.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Do We Support All of The Mobile Phone Brands?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+            saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+            ullam, iure eligendi harum eaque hic corporis debitis porro
+            consectetur voluptate rem officiis architecto.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How does the Krushi address the above challanges?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+            saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+            ullam, iure eligendi harum eaque hic corporis debitis porro
+            consectetur voluptate rem officiis architecto.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can I be a part of Krushi?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+            saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+            ullam, iure eligendi harum eaque hic corporis debitis porro
+            consectetur voluptate rem officiis architecto.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How does it work?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+            saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+            ullam, iure eligendi harum eaque hic corporis debitis porro
+            consectetur voluptate rem officiis architecto.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <footer>
         <div class="footer-content">
@@ -197,7 +330,26 @@
                 <p>Copyright &copy; 2023 The Phone Repair Shop Designed By Hemanth & Arjun. All Rights Reserved.
     <script> var loader=document.getElementById("preloader");
         window.addEventListener("load",function(){
-        loader.style.display="none";})</script>
+        loader.style.display="none";})
+        var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+        </script>
+
     <script>
      
         
@@ -217,6 +369,7 @@
                     <li><a href="home.php"><img class="insta" src="instagram.svg"  alt="#"></a></li>
                     <li><a href="home.php"><img class="fb" src="facebook.svg"  alt="#"></a></li>
                     <li><a href="home.php"><img class="xlogo" src="xwhite.png"  alt="#"></a></li>
+                    <li><a href="home.php"><img class="reddit" src="reddit.png"  alt="#"></a></li>
             
                 </ul> 
                 
@@ -239,6 +392,7 @@
     <script> var loader=document.getElementById("preloader");
         window.addEventListener("load",function(){
         loader.style.display="none";})</script>
+        
     <script>
        
         $(window).scroll(function(){

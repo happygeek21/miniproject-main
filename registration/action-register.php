@@ -14,20 +14,24 @@
     {
         die("Connection Failed!".$conn->connect_error);
     }
-    else
+    /*else
     {
         echo"Connection Success!";
-    }
+    }*/
    
     //inserting to table
     
     $fname=$_POST['firstname'];
     $lname=$_POST['lastname'];
     $mail=$_POST['mail'];
+    $dob=$_POST['dob'];
     $_SESSION['semail']=$mail;
     $ph=$_POST['phone'];
     $pass=$_POST['passwd'];
+    $confirm_password=$_POST['cp'];
     $enc_pass=MD5($pass);
+ 
+
 
      //php validation
 
@@ -35,19 +39,49 @@
         $name_error= "Please Enter First Name";
     }
     
-    
-    
-    $query = "INSERT INTO user_info (firstname, lastname, email, phone, passwd) VALUES ('$fname', '$lname', '$mail', '$ph', '$enc_pass')";
-    $result=mysqli_query($conn,$query);
-    if(!$result)
-    {
-        echo("Failed To Sent!<br>".mysqli_error($conn));
-    }
-    else
-    {
-        echo("Query Affected");
-    }   
+    $query = "SELECT * FROM user_info WHERE email = '$mail'";
+        $result=mysqli_query($conn,$query);
+        if ($result->num_rows > 0) 
+        {
+            echo '<script>alert("Account Already Exists!")</script>';
+            echo '<script>window.location= "indexreg.php"</script>';
+        }
+            else
+        {
 
-    mysqli_close($conn);
+            if($pass==$confirm_password)
+             {
+
+                $query = "INSERT INTO user_info (firstname, lastname, email, phone, passwd,dob) VALUES ('$fname', '$lname', '$mail', '$ph', '$enc_pass','$dob')";
+                $result=mysqli_query($conn,$query);
+                if(!$result)
+                {
+                    echo("Failed To Sent!<br>".mysqli_error($conn));
+                }
+                else
+                {
+                        
+                    
+                    echo '<script>alert("Registration Sucessfull!")</script>';
+                    echo'<script> window.location = http://localhost/miniproject-main/login/login.php;</script>';
+                }   
+            
+                 mysqli_close($conn);
+                }
+
+       
+
+            else
+            {
+                 echo '<script>alert("Password Does not match")</script>';
+            }
+
+  
+    
+
+
+
+
+        }
     
 ?>

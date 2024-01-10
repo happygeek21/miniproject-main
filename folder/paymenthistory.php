@@ -32,7 +32,7 @@
             <ul>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a id="button" href="http://localhost/miniproject-main/folder/bills.php">bills</a></li>
+                <li><a id="button" href="http://localhost/miniproject-main/folder/bills.php">Bills</a></li>
                 <li><a id="button" href="http://localhost/miniproject-main/login/logout.php">Log Out</a></li>
                 
             </ul>
@@ -58,8 +58,8 @@
                     <?php
 
                         include('conn.php');
-                        echo("Your Email ID is  $sv");
-                        echo("Welcome $user");
+                        //echo("Your Email ID is  $sv");
+                       //echo("Welcome $user");
                         
                         
                         $query="SELECT * FROM my_view where email='$sv' and status=2";

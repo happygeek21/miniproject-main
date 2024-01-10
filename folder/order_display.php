@@ -32,7 +32,7 @@
             <ul>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a id="button" href="http://localhost/miniproject-main/folder/paymenthistory.php">Payment history</a></li>
+                <li><a id="button" href="http://localhost/miniproject-main/folder/paymenthistory.php">Payment History</a></li>
                 <li><a id="button" href="http://localhost/miniproject-main/login/logout.php">Log Out</a></li>
             
             </ul>
@@ -57,9 +57,9 @@
                 <tbody>
                     <?php
 
-                        include('conn.php');
-                        echo("Your Email ID is  $sv");
-                        echo("Welcome $user");
+                       include('conn.php');
+                        //echo("Your Email ID is  $sv");
+                        //echo("Welcome $user");
                         $qry1="UPDATE db_fetch
                         SET action = CASE
                             WHEN status = '1' THEN 'Pending'

@@ -28,7 +28,7 @@
                 
             </div>
             <ul>
-                <li><a href="http://localhost/miniproject-main/db_fetch_staff/index.php">Manage User Data</a></li>
+            <li><a href="http://localhost/miniproject-main/db_fetch_staff/index.php">Manage User Data</a></li>
                 <li><a href="http://localhost/miniproject-main/user_info_staff/index.php">Manage User Info</a></li>
                 <li><a id="buttonn" href="http://localhost/miniproject-main/order_status/order_db.php">Update Status</a></li>
                 <li><a id="button" href="http://localhost/miniproject-main/login/logout.php">Log Out</a></li>

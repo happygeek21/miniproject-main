@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="input.css">
+    <script src="http://localhost/miniproject-main/input-details/input_validation.js"></script>
+
 </head>
 <body>
 
@@ -45,11 +47,11 @@
             
             <div class="input5">
                 <label for="">E-Mail</label>
-                <input type="email" name="email">
+                <input type="email" name="email" id="email">
             </div>
             <div class="input5">
                 <label for="">Model Number</label>
-                <input type="text" name="model">
+                <input type="text" name="model" id="model">
             </div>
 
         
@@ -69,7 +71,7 @@
                 
             </div>    
             <div class="input4">
-                <textarea name="details" id="" cols="40" rows="6" placeholder="Description"></textarea>
+                <textarea name="details" id="desc" cols="40" rows="6" placeholder="Description"></textarea>
             </div>
                 
             <div class="button">
